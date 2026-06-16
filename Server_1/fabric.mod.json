@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "polaris",
+  "version": "0.1.0",
+  "name": "Polaris",
+  "description": "Polaris — ferramenta de pentest white-box pro lean-gts (CentralGts). Como a estrela Polaris guia navegadores, esta ferramenta guia o desenvolvedor pelos pontos cegos do mod via injeção de payloads forjados e cenários de race condition.",
+  "authors": ["pentester"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "value": "com.polaris.gts.PolarisClient",
+        "adapter": "kotlin"
+      }
+    ]
+  },
+  "mixins": [
+    {
+      "config": "polaris.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "fabric-language-kotlin": "*",
+    "lean-gts": "*"
+  }
+}
