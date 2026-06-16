@@ -1,0 +1,3 @@
+Coloque aqui o lean-gts-1.1.0.jar (ou o .jar do mod-alvo).
+O build.gradle.kts faz `modImplementation(fileTree("libs") { include("*.jar") })`,
+então qualquer .jar nessa pasta será resolvido em compile-time.

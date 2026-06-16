@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "polaris",
+  "version": "${version}",
+  "name": "Polaris",
+  "description": "Polaris e um mod client-side independente para executar e observar cenarios autorizados de pentest, incluindo testes de timing e race condition.",
+  "authors": ["pentester"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "value": "com.polaris.gts.PolarisClient",
+        "adapter": "kotlin"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "fabric-language-kotlin": "*",
+    "cobblemon": ">=1.7.3"
+  }
+}
